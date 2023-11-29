@@ -1,0 +1,8 @@
+steps for new checkout new project from git in eclipse
+
+right click  and go to import
+select git ---> Smart project
+select clon url
+enter url (which is copied from git hub repository)
+ enter user id and password (token)
+ click on next and finish

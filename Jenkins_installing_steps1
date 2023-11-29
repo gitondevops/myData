@@ -1,0 +1,46 @@
+ curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+ sudo apt-get update
+ sudo apt-get install jenkins
+ systemctl edit jenkins
+ sudo systemctl edit jenkins
+ sudo systemctl restart jenkins
+ sudo systemctl status jenkins
+ history
+ sudo ufw status
+ sudo ufw allow 8081
+ sudo ufw allow 8081 (v6)
+ sudo ufw status
+ sudo iptables -I INPUT -p TCP --dport 8081 -j LOG && sudo iptables -I INPUT -p TCP --dport 8081 -j ACCEPT
+ sudo netstat -tulpn | grep LISTEN
+ sudo systemctl restart jenkins
+ sudo systemctl edit jenkins
+ cd /home/ubuntu/tomcat9/bin
+ sh shutdown.sh 
+ sudo systemctl restart jenkins
+ sudo systemctl status jenkins
+ sudo iptables -I INPUT -p TCP --dport 8082 -j LOG && sudo iptables -I INPUT -p TCP --dport 8082 -j ACCEPT
+ exit
+ sudo iptables -I INPUT -p TCP --dport 8081 -j LOG && sudo iptables -I INPUT -p TCP --dport 8081 -j ACCEPT
+ sudo iptables -I INPUT -p TCP --dport 8082 -j LOG && sudo iptables -I INPUT -p TCP --dport 8082 -j ACCEPT
+ sudo systemctl status jenkins
+ sudo systemctl edit jenkins
+ sudo systemctl restart jenkins
+ sudo systemctl status jenkins
+ history
+ history | grep /etc/apache2/sites-available/000-default.conf
+ sudo systemctl edit jenkins
+ sudo systemctl restart jenkins
+ sudo systemctl status jenkins
+ sudo systemctl enable jenkins
+ history | grep mvn
+ mvn -v
+ history | grep ech
+ echo $M2_HOME
+ echo $JAVA_HOME
+ cd github/
+ cd mediq-hims/
+ mvn clean install
+ sudo usermod -a -G ubuntu jenkins
+ sudo systemctl restart jenkins
+

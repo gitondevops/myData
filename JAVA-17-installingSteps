@@ -1,0 +1,11 @@
+sudo update-java-alternatives -l
+ 1376  sudo apt install openjdk-17-jdk -y
+ 1377  sudo update-alternatives --config javac
+ 1378  sudo update-java-alternatives -l
+ 1379  sudo gedit /etc/environment
+ 1380  echo $JAVA_HOME
+ 1381  sudo gedit /etc/environment
+ 1382  sudo source /etc/environment
+ 1383  echo $JAVA_HOME
+ 1384  restart
+

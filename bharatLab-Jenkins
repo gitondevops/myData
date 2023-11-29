@@ -1,0 +1,45 @@
+sshPublisher(publishers: [sshPublisherDesc(configName: 'bharatlab', transfers: [sshTransfer(cleanRemote: true, excludes: '', execCommand: 'java -jar /home/ubuntu/bharat/target/lis_test-0.1.war', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '/bharat', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '**/*.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+
+
+def remoteDirectory = '/home/ubuntu/bharat'
+def javaProcessName = 'lis_test-0.1.war'
+
+// Step 1: Stop the existing Java process
+sshPublisher(
+    publishers: [
+        sshPublisherDesc(
+            configName: 'bharatlab',
+            transfers: [
+                sshTransfer(
+                    execCommand: "pkill -f $javaProcessName",
+                    execTimeout: 60000,  // Adjust timeout as needed
+                    remoteDirectory: remoteDirectory
+                )
+            ],
+            usePromotionTimestamp: false,
+            useWorkspaceInPromotion: false,
+            verbose: false
+        )
+    ]
+)
+
+// Step 2: Deploy the new version
+sshPublisher(
+    publishers: [
+        sshPublisherDesc(
+            configName: 'bharatlab',
+            transfers: [
+                sshTransfer(
+                    cleanRemote: true,
+                    execCommand: "java -jar $remoteDirectory/$javaProcessName",
+                    execTimeout: 120000,
+                    remoteDirectory: remoteDirectory,
+                    sourceFiles: '**/*.war'
+                )
+            ],
+            usePromotionTimestamp: false,
+            useWorkspaceInPromotion: false,
+            verbose: false
+        )
+    ]
+)

@@ -1,0 +1,14 @@
+---coulumn add in investigation master----
+
+ALTER TABLE `investigation_master`  ADD `international_id` INT NOT NULL DEFAULT '0'  AFTER `invest_label`;
+
+
+
+style="display:none;"
+
+
+SHA256:D+V++PzCpl3drk8fL0RjWgx34bdUGd2kNEwDuHTnulA tarun@DESKTOP-NGF9UDI
+
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCzgiNdTE9s9Ak/Kg4AVexDUZHI4prfPOPjIMPmrMYKLoLf3Q8fpyyrQ1jQw/rETA8/RCKBmeOUlo17rXCBtvdA9fEiP2fb8ictGvCC/sHliOQUnI5EKKLQIqITQ2h7K2DPmT+902UlySCT2T7UtgLVGKqQ+j1MXxLFLAmYoO+Z8nTKjPR8+aPIuspHTY2Q19LO9arZJwmyHJh/8fy1kGevo+B476WXiqz2BCpo00m+pWq+CpSXAk69OTbe3QVuy/tc8jUIgvsvGGA9Cu3c4dhx+ANHC411qkD70rmx08GnXNWsrVOgh9z/sPtp/nrTzbgo6i7DlSD93WYaemafMheg5jj8ABB0ULT0vAn6bqmqzySEuh2drf0ueJN1vNaHDnIIdzNrnwvzI3FdqR2QBnVyZpFdGXnWbnerGkSgklrLIqEEe7NTKOteVM8oRzgRseRk0tylCtcAJqLXzB+Y/L7LaDJJuT1uZCRykEtylUwH+InTo926EFmtMh0zYLRhIo0= tarun@DESKTOP-NGF9UDI
+

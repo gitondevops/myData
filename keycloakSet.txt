@@ -1,0 +1,38 @@
+./kc.sh start-dev --https-port=6100
+   chmod 777 -R bin/
+   chmod 777 -R 
+   cd ..
+   chmod 777 -R bin/
+   cd bin/
+   ./kc.sh start-dev --https-port=6100
+   ./kc.sh start-dev --http-port=6100
+   export KEYCLOAK_ADMIN=admin
+   export KEYCLOAK_ADMIN_PASSWORD=admin
+   ./kc.sh start-dev --http-port=6100
+   ./kc.sh start-dev --http-port=6100 &
+   cd keycloak-21.1.1/bin/
+   ./kc.sh start-dev --http-port=6100 &
+   cd keycloak-21.1.1/bin/
+   sudo kcadm.sh update realms/master -s sslRequired=NONE
+   kcadm.sh update realms/master -s sslRequired=NONE
+   ./kcadm.sh update realms/master -s sslRequired=NONE
+   sudo ./kcadm.sh update realms/master -s sslRequired=NONE
+   ls
+   chmod 777 kcadm.sh
+   ./kcadm.sh update realms/master -s sslRequired=NONE
+   sudo /opt/keycloak/bin/kcadm.sh config credentials --server http://localhost:8080/auth --realm master --user <admin-username> 
+   –-password <admin-password>admin
+   sudo /opt/keycloak/bin/kcadm.sh config credentials --server http://localhost:8080/auth --realm master --user admin 
+   sudo /kcadm.sh config credentials --server http://localhost:6100/auth --realm master --user admin
+   ./kcadm.sh config credentials --server http://localhost:6100/auth --realm master --user admin
+   ./kcadm.sh update realms/master -s sslRequired=NONE
+   sudo /kcadm.sh config credentials --server http://150.230.239.72:6100/auth --realm master --user admin
+   sudo kcadm.sh config credentials --server http://150.230.239.72:6100/auth --realm master --user admin
+   sudo ./kcadm.sh config credentials --server http://150.230.239.72:6100/auth --realm master --user admin
+   sudo ./kcadm.sh config credentials --server http://localhost:6100/auth --realm master --user admin
+   ./kc.sh start-dev --http-port=6100
+ cd keycloak-21.1.1/
+   cd bin/
+   ./kc.sh start-dev --http-port=6100
+
+

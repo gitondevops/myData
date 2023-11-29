@@ -1,0 +1,22 @@
+
+Steps for puling data from github
+
+
+    apt update -y
+    sudo apt update -y
+    sudo apt git install -y
+    sudo apt install git -y
+    git --version
+    git config --global user.name "---"
+    git config --global user.email "---.com"
+    git config --list
+    ls
+    mkdir demo_git_pull or (go to the directory in which you want to add data)
+    cd demo_git_pull/ or (go to the directory in which you want to add data)
+    git init 
+    cd
+    cd demo_git_pull
+    git init
+    git remote add origin (github repo URL)
+    git log
+    git pull origin master

@@ -1,0 +1,29 @@
+   git init
+   git add .
+   git commit -m "first commit"
+   git remote add origin https://github.com/mediquityongit/BHU.git
+   git push -u origin master
+   git pull --rebase origin main *if error: failed to push some refs to 'https://github.com/mediquity..........
+   git push -u origin main
+   
+   
+   *************************
+  ---- The default branch has been renamed!
+master is now named main
+
+If you have a local clone, you can update it by running the following commands.
+
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+
+********************Data to push on GitHub into Main branch***************
+Go to directory 
+ git init
+ git add .
+ git commit -m "first commit"
+ git branch -M main
+ git remote add origin https://github.com/mediquityongit/RedCross.git
+ git push -u origin main
+

@@ -1,0 +1,47 @@
+To grant public read access for your website, copy the following bucket policy, and paste it in the Bucket policy editor. 
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::Bucket-Name/*"
+            ]
+        }
+    ]
+}
+
+####################################################
+IAM Policy permission 
+Example policy:
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                        "s3:GetBucketLocation",
+                        "s3:ListAllMyBuckets"
+                      ],
+            "Resource": "arn:aws:s3:::*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::mys3examplebucketvip",
+                "arn:aws:s3:::mys3examplebucketvip/*"
+            ]
+        }
+    ]
+}
+
+#####################################################

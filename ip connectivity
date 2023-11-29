@@ -1,0 +1,10 @@
+Port Conectivity
+
+
+sudo iptables -I INPUT -p TCP --dport 2100 -j LOG && sudo iptables -I INPUT -p TCP --dport 2100 -j ACCEPT 
+ sudo gedit /etc/apache2/ports.conf
+ sudo ufw allow 'Apache'
+ sudo service apache2 restart
+ 
+ ***************For checking Running Port***********
+ sudo lsof -nP | grep LISTEN

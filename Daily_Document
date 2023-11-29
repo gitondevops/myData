@@ -1,0 +1,53 @@
+﻿*Aptt test parameter delete* 
+delete from test_master where tm_id in (105,106);
+delete from lis_result where tm_id in (105,106);
+
+
+
+*For Checking running Ports*
+sudo lsof -i -P -n | grep LISTEN
+
+*Spoke Count*
+{Authorization Spoke count query in dao hubSpoke
+select count DISTINCT(o.location) FROM lis_order o JOIN hospital_reg l ON l.hr_id=o.hr_id where l.hosp_name!=o.location
+
+column add in hubspoke CMS 
+ALTER TABLE `lis_order`  ADD `location` VARCHAR(50) NOT NULL  AFTER `referred_department`;
+}
+
+
+AND (i.investigation.machineName ='"+ machineNameId +  "' OR "  + machineNameId + "= '0' ) ";
+else if(!machineNameId.equalsIgnoreCase("All")){ 
+			logger.info("2");
+			query+=" AND i.labId=:labid AND (i.investigation.machineName ='"+ machineNameId +  "' GROUP BY i.investigation, Date(i.createdAt) Order by i.createdAt DESC";
+			results = e.createQuery(query, Object[].class).setParameter("labid", lab_id).getResultList();
+			
+		}  
+		if (!machineNameId.equalsIgnoreCase("All")) {
+				query += "AND (i.investigation.machineName ='" + machineNameId + "' AND (i.labId ="
+						+ Integer.parseInt(src_lab_id) + " OR " + src_lab_id
+						+ "= '0') GROUP BY i.investigation, Date(i.createdAt) Order by i.createdAt DESC";
+			} else {
+			
+		
+			
+			{
+			INSERT INTO `inv_stock_entry`( `inv_grn_id`, `hr_id`, `grn_number`, `international_id`, `entry_date`, `po_number`, `hsn`, `batch`, `indent_no`, `total_qty`, `cur_qty`, `free`, `flag`, `remark`, `update_date`, `created_by`, `updated_by`, `lab_name`, `created_by_username`, `updated_by_username`, `exp_date`, `vendor_id`, `po_mode`, `inv_challan_no`, `inv_challan_date`, `mrp`, `rate`, `amount`, `discount`, `gst`, `cgst`, `cgst_amt`, `sgst`, `sgst_amt`, `total_cgst_amt`, `total_sgst_amt`, `total_gst_amt`, `estimate_amount`, `total_discount`, `sub_total`, `final_amount`, `payment_mode`, `card_cheque_no`, `bank_name`, `bank_branch`) 
+SELECT  `inv_grn_id`, `hr_id`, `grn_number`, `international_id`, `entry_date`, `po_number`, `hsn`, `batch`, `indent_no`, `total_qty`, `cur_qty`, `free`, `flag`, `remark`, `update_date`, `created_by`, `updated_by`, `lab_name`, `created_by_username`, `updated_by_username`, `exp_date`, `vendor_id`, `po_mode`, `inv_challan_no`, `inv_challan_date`, `mrp`, `rate`, `amount`, `discount`, `gst`, `cgst`, `cgst_amt`, `sgst`, `sgst_amt`, `total_cgst_amt`, `total_sgst_amt`, `total_gst_amt`, `estimate_amount`, `total_discount`, `sub_total`, `final_amount`, `payment_mode`, `card_cheque_no`, `bank_name`, `bank_branch` FROM `inv_stock_entry29aug`}
+
+
+*Spelling change in dengue*
+UPDATE `ch_bhopal_amlaug`.`test_master` SET `auto_fill_array` = ' Negative, Positive ' WHERE (`tm_id` = '4');
+
+*********************
+ sudo gedit /etc/apache2/sites-available/000-default.conf 
+
+ServerAdmin webmaster@localhost
+	DocumentRoot /var/www/tender
+	1323  sudo service apache2 restart
+	******************
+******For groupby error***********
+[mysqld]
+sql_mode = "NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+
+

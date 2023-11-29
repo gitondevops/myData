@@ -1,0 +1,47 @@
+https://phoenixnap.com/kb/install-tomcat-ubuntu
+ java --version
+   
+   mvn -version
+   sudo apt install maven
+   
+   sudo apt-get install wget
+   wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.0.M10/bin/apache-tomcat-9.0.0.M10.tar.gz
+   wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.72/bin/apache-tomcat-9.0.72.tar.gz
+
+
+    ls
+ tar -xvf apache-tomcat-9.0.0.M10.tar.gz
+ mv apache-tomcat-9.0.0.M10 tomcat9
+ pwd
+ cat /home/ubuntu/tomcat9/conf/tomcat-users.xml
+ 
+vi /home/ubuntu/tomcat9/conf/tomcat-users.xml
+********************************************************************
+sudo apt update
+    sudo groupadd tomcat
+    sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
+    sudo mkdir /opt/tomcat
+    sudo tar -xzvf apache-tomcat-9.0.72.tar.gz -C /opt/tomcat --strip-components=1
+    sudo chgrp -R tomcat /opt/tomcat
+    sudo chmod -R g+r /opt/tomcat/conf
+    sudo chmod g+x /opt/tomcat/conf
+    sudo chown -R tomcat /opt/tomcat/webapps/ /opt/tomcat/work/ /opt/tomcat/temp/ /opt/tomcat/logs/
+    sudo vi /etc/systemd/system/tomcat.service
+    sudo systemctl daemon-reload
+    sudo systemctl start tomcat
+    sudo systemctl status tomcat
+    vi /home/mediquity/opt/tomcat/conf/tomcat-users.xml 
+   
+    cd
+    gedit /opt/tomcat/conf/context.xml
+    sudo systemctl restart tomcat
+    gedit /opt/tomcat/webapps/manager/META-INF/context.xml
+    sudo systemctl restart tomcat
+    sudo gedit /opt/tomcat/webapps/manager/META-INF/context.xml
+    sudo gedit /opt/tomcat/webapps/manager/WEB-INF/web.xml
+    sudo systemctl restart tomcat
+    sudo gedit /opt/tomcat/conf/tomcat-users.xml
+    sudo systemctl restart tomcat
+    sudo gedit /opt/tomcat/webapps/manager/META-INF/context.xml
+    hitory
+
